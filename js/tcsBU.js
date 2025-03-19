@@ -1856,9 +1856,27 @@ function svgStart() {
    * Define costum drag
    */
   
-  drag = force.drag().on("dragstart", function(d) {
-    d3.event.sourceEvent.stopPropagation();
-  });
+drag = force.drag()
+    .on("dragstart", function(d) {
+        d3.event.sourceEvent.stopPropagation();
+        // Fix the node's position to its current coordinates
+        d.fx = d.x;
+        d.fy = d.y;
+    })
+    .on("drag", function(d) {
+        // Update the node's fixed position during the drag
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    })
+    .on("dragend", function(d) {
+        // Keep them fixed. If you DO want them to be free again:
+        //   d.fx = null;
+        //   d.fy = null;
+        // comment or remove the lines below. But to stay in place, keep them:
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    });
+
                   
   /*
    * Delete a selected node
