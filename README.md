@@ -1,5 +1,9 @@
 # tcsBU
 
+> **FORK NOTE**: This fork of tcsBU introduces an experimental feature allowing you to manually drag and reposition nodes after the network is generated, giving you finer control over the final layout. It is avaliable here: https://alotsa.github.io/tcsBU_test/. Please note that these changes are not part of the official release and may not be maintained in sync with the main repository. If you need the standard version or official support, use the original repository or the online versions mentioned below.
+
+> ---
+
 > **NOTE 4**: A temporary site for the online version of tcsBU is now available at (http://www.fc.up.pt/pessoas/amsantos/tcsBU).
 
 > **NOTE 3**: Until further notice, tcsBU online version (http://cibio.up.pt/software/tcsBU/index.html) will be not available due to a change in the Internet Service Provider. Currently, CIBIO's Website is not hosted directly by the University of Porto. You can still use the current version of tcsBU by selecting the master branch and downloading the files of this repository, saving them in any folder. Go to that folder and click on *index.html* or open it with any modern browser.
