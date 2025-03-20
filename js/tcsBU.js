@@ -42,7 +42,7 @@ var deletelink = false,
   var defaultDistance = 12,
       defaultGravity = 0.05,
       defaultCharge = -30,
-      defaultLinkDistance = 1,
+      defaultLinkDistance = 5,
       defaultLinkStrength = 1,
       defaultFriction = 0.95;
       
